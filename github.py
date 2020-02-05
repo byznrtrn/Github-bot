@@ -13,7 +13,7 @@ class Github:
         self.browser.get("https://github.com/login")
         time.sleep(2)
 
-        self.browser.find_element_by_xpath("//*[@id='login_field']").send_keys(self.username) #default olark gelen çift tırnakları tek tırnak yapmayı unutma!
+        self.browser.find_element_by_xpath("//*[@id='login_field']").send_keys(self.username) 
         self.browser.find_element_by_xpath("//*[@id='password']").send_keys(self.password)
 
         time.sleep(1)
